@@ -31,4 +31,3 @@ export function setFlag(targetId, curserId, curse) {
     console.log("betterCurses | Adding new curse"); 
     target.setFlag('betterCurses',curse,[curser.id]);
   }
-}

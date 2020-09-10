@@ -10,4 +10,3 @@ Hooks.on("setup", function() {
     window.BetterCurses = {
         curse: curse
     }
-})
