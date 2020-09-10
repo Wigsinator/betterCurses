@@ -1,14 +1,14 @@
 {   
    "name": "betterCurses",   
    "title": "Better Curses",   
-   "description": "Sharing data across worlds",   
+   "description": "Creates Functionality for curses",   
    "author": "Wigsinator",
-   "version": "0.0.1",
+   "version": "0.0.2",
    "minimumCoreVersion": "0.6.5",
-   "compatibleCoreVersion":"0.6.5",
-   "url":"https://github.com/Wigsinator/betterCurses",
-   "manifest":"https://github.com/Wigsinator/betterCurses/blob/master/src/module.json",
-   "download":"https://github.com/Wigsinator/betterCurses/archive/v0.0.1.zip",
+   "compatibleCoreVersion":"0.6.6",
+   "esmodules": [
+    "betterCurses.js"
+   ],
    "packs": [
     {
       "name": "macros",
@@ -17,5 +17,8 @@
       "entity": "Macro",
       "module": "betterCurses"
     }
-  ]
+  ],
+  "url":"https://github.com/Wigsinator/betterCurses",
+  "manifest":"https://github.com/Wigsinator/betterCurses/blob/master/src/module.json",
+  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v0.0.1/betterCurses-wigsinator.zip"
  }
