@@ -6,11 +6,11 @@ Better Curses module for Foundry VTT
 
 - [x] Be able to set flags
 - [ ] Define information within curse items
-    - [ ] Create space within items for Curse information
-    - [ ] Add checkbox for "Is Curse"
+    - [x] Create space within items for Curse information
+    - [x] Add checkbox for "Is Curse"
     - [ ] Add string for curse damage formula
     - [ ] Add string for curse name
-    - [ ] Set of 4 checkboxes to define what the curse triggers on (mw, rw, ms, rs)
+    - [x] Set of 4 checkboxes to define what the curse triggers on (mw, rw, ms, rs)
 - [ ] Hijack rollDamage
     - [ ] Add @`curseName` to parts
     - [ ] Add curse damage formula for rollData[`curseName`]
