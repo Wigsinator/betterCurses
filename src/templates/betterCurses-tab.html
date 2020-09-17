@@ -1,0 +1,51 @@
+<style type="text/css">
+    .dnd5e.sheet.item .betterCurses input[type="text"] {
+        height: 24px;
+        border: 1px solid #7a7971;
+        background: rgba(0, 0, 0, 0.05);
+    }
+</style>
+
+<div class="tab betterCurses" data-tab="betterCurses" data-group="primary">
+
+    <div class="form-group">
+        <label>{{localize "betterCurses.isCurse"}}</label>
+        <input type="checkbox" name="flags.betterCurses.isCurse" value="1" data-dtype="{{Boolean}}" {{checked flags.betterCurses.isCurse}}/>
+    </div>
+    <div class="form-group">
+        <label>{{localize "betterCurses.curseName"}}</label>
+        <input type="text" name="flags.betterCurses.curseName" value="{{flags.betterCurses.curseName}}" data-dtype="String"/>
+    </div>
+    <div class="form-group">
+        <label>{{localize "betterCurses.formula"}}</label>
+        <input type="text" name="flags.betterCurses.formula" value="{{flags.betterCurses.formula}}" data-dtype="String"/>
+    </div>
+
+    <div class="form-group">
+        <label>{{localize "betterCurses.affects"}}
+    </div>
+    <div class="form-group">
+        <table>
+            <tr>
+                <td>
+                    <label>{{localize "betterCurses.mw"}}</label>
+                    <input type="checkbox" name="flags.betterCurses.mw" value="1" data-dtype="{{Boolean}}" {{checked flags.betterCurses.mw}}/>
+                </td>
+                <td>
+                    <label>{{localize "betterCurses.rw"}}</label>
+                    <input type="checkbox" name="flags.betterCurses.rw" value="1" data-dtype="{{Boolean}}" {{checked flags.betterCurses.rw}}/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>{{localize "betterCurses.ms"}}</label>
+                    <input type="checkbox" name="flags.betterCurses.ms" value="1" data-dtype="{{Boolean}}" {{checked flags.betterCurses.ms}}/>
+                </td>
+                <td>
+                    <label>{{localize "betterCurses.rs"}}</label>
+                    <input type="checkbox" name="flags.betterCurses.rs" value="1" data-dtype="{{Boolean}}" {{checked flags.betterCurses.rs}}/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
