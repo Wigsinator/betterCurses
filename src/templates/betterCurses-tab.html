@@ -1,3 +1,11 @@
+<style type="text/css">
+    .dnd5e.sheet.item .betterCurses input[type="text"] {
+        height: 24px;
+        border: 1px solid #7a7971;
+        background: rgba(0, 0, 0, 0.05);
+    }
+</style>
+
 <div class="tab betterCurses" data-tab="betterCurses" data-group="primary">
 
     <div class="form-group">
@@ -13,6 +21,9 @@
         <input type="text" name="flags.betterCurses.formula" value="{{flags.betterCurses.formula}}" data-dtype="String"/>
     </div>
 
+    <div class="form-group">
+        <label>{{localize "betterCurses.affects"}}
+    </div>
     <div class="form-group">
         <table>
             <tr>
