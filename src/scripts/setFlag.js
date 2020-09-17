@@ -25,9 +25,10 @@ export function setFlag(targetId, curserId, curse) {
     target.setFlag('betterCurses',curse,list);
   } else if (enabled) {
     console.log("betterCurses | Already cursed by other curser, adding to list"); 
-    list.push(curser.id;
+    list.push(curser.id);
     target.setFlag('betterCurses',curse,list);
   } else {
     console.log("betterCurses | Adding new curse"); 
     target.setFlag('betterCurses',curse,[curser.id]);
   }
+}
