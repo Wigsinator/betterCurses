@@ -3,7 +3,7 @@
    "title": "Better Curses",
    "description": "Creates Functionality for curses",
    "author": "Wigsinator",
-   "version": "0.0.2",
+   "version": "1.0.0",
    "minimumCoreVersion": "0.6.5",
    "compatibleCoreVersion":"0.6.6",
    "esmodules": [
@@ -34,5 +34,5 @@
   ],
   "url":"https://github.com/Wigsinator/betterCurses",
   "manifest":"https://github.com/Wigsinator/betterCurses/blob/master/src/module.json",
-  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v0.0.2-hotfix/betterCurses-wigsinator.zip"
+  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v1.0.0/betterCurses-wigsinator.zip"
  }
