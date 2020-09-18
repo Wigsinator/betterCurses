@@ -35,7 +35,7 @@ If you attempt to apply the curse to a target when they are already cursed by th
 
 ## Installation
 
-Install using the manifest URL: `https://github.com/Wigsinator/betterCurses/blob/master/src/module.json`
+Install using the manifest URL: `https://raw.githubusercontent.com/Wigsinator/betterCurses/master/src/module.json`
 
 ## List of functionality to create
 
