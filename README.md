@@ -11,7 +11,7 @@ Better Curses module for Foundry VTT
     - [x] Add string for curse damage formula
     - [x] Add string for curse name
     - [x] Set of 4 checkboxes to define what the curse triggers on (mw, rw, ms, rs)
-- [ ] Hijack rollDamage
-    - [ ] Add @`curseName` to parts
-    - [ ] Add curse damage formula for rollData[`curseName`]
-    - [ ] Try to find a way to do this without breaking other modules
+- [x] Hijack rollDamage
+    - [x] Add @`curseName` to parts
+    - [x] Add curse damage formula for rollData[`curseName`]
+    - [x] Try to find a way to do this without breaking other modules
