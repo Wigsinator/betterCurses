@@ -3,7 +3,7 @@ Better Curses module for Foundry VTT
 
 ## Features
 
-This module for the Dungeons and Dragons 5th Edition system exists to make it easier to run games where someone has a persistent effect that deals damage when hit with an attack, such as [Hunter's Mark](https://www.dndbeyond.com/spells/hunters-mark) or Hex.
+This module for the DND5e system exists to make it easier to run games where someone has a persistent effect that deals damage when hit with an attack, such as [Hunter's Mark](https://www.dndbeyond.com/spells/hunters-mark) or Hex.
 
 To begin, select the item that can afflict the curse. For the purpose of example, Hunter's Mark will be used.
 
