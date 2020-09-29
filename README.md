@@ -37,6 +37,12 @@ If you attempt to apply the curse to a target when they are already cursed by th
 
 Install using the manifest URL: `https://raw.githubusercontent.com/Wigsinator/betterCurses/master/src/module.json`
 
+## Module Compatibility
+
+This module, in its functioning, hijacks use of the Item5e's rollDamage function. Any other module that also affects this function, or any module that bypasses the function entirely when rolling damage, is likely to cause problems with this module. If such a module pops up, please raise an issue in GitHub issues and/or ping me on The Foundry Discord @Wigsinator#2306. I can't guarantee I can fix the problem, but I can at least look into making it work.
+
+One such module is MESS. Mess bypasses the rollDamage function entirely when using modified rolling, opting instead for its own internal getDmgData function. Seeing as I have no access to this function from outside the module, fixing compatibility with MESS modified rolling is impossible. I'm very sorry.
+
 ## List of functionality to create
 
 - [ ] Make it easier to know who is cursed, and by whom
