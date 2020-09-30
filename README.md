@@ -45,6 +45,7 @@ One such module is MESS. Mess bypasses the rollDamage function entirely when usi
 
 ## List of functionality to create
 
+- [ ] Overhaul logic in preparation for version 0.7.x of Foundry
 - [ ] Make it easier to know who is cursed, and by whom
 - [ ] Add a function to clear all curses affecting a target
 - [ ] Alter targeting rules so that curses can only target one user
