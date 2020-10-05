@@ -23,3 +23,10 @@ export function setupHooks(){
     }
   })
 }
+
+function clearEffects(actor){
+  var filtered = actor.effects.filter(x => x.data.label === "betterCurses");
+  for (effect of filtered) {
+    actor.deleteEmbeddedEntity("ActiveEffect", effect.id);
+  }
+}
