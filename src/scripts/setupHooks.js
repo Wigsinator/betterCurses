@@ -1,4 +1,5 @@
-
+import { clearEffects } from "./clearEffects.js"
+import { applyEffects } from "./applyEffects.js"
 
 export function setupControlHook(){
   return Hooks.on("controlToken", (controlledToken, selected) => {
