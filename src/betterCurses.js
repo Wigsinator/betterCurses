@@ -2,7 +2,6 @@
 import { log } from "./scripts/helpers.js"
 import { curse } from "./scripts/curse.js"
 import { initSheetTab } from "./scripts/betterCursesTab.js"
-import { setupRollHandler } from "./scripts/rollHandler.js"
 import { setupControlHook, setupTargetHook } from "./scripts/setupHooks.js"
  
 function i18n(key) {
