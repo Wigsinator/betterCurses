@@ -18,10 +18,10 @@ async function addBetterCursesTab(app,html,data) {
   if (!hasProperty(item.data, "flags.betterCurses.isCurse")) setProperty(item.data, "flags.betterCurses.isCurse", false);
   if (!hasProperty(item.data, "flags.betterCurses.curseName")) setProperty(item.data, "flags.betterCurses.curseName", "");
   if (!hasProperty(item.data, "flags.betterCurses.formula")) setProperty(item.data, "flags.betterCurses.formula", "");
-  if (!hasProperty(item.data, "flags.betterCurses.mw")) setProperty(item.data, "flags.betterCurses.mw", false);
-  if (!hasProperty(item.data, "flags.betterCurses.rw")) setProperty(item.data, "flags.betterCurses.rw", false);
-  if (!hasProperty(item.data, "flags.betterCurses.ms")) setProperty(item.data, "flags.betterCurses.ms", false);
-  if (!hasProperty(item.data, "flags.betterCurses.rs")) setProperty(item.data, "flags.betterCurses.rs", false);
+  if (!hasProperty(item.data, "flags.betterCurses.mwak")) setProperty(item.data, "flags.betterCurses.mwak", false);
+  if (!hasProperty(item.data, "flags.betterCurses.rwak")) setProperty(item.data, "flags.betterCurses.rwak", false);
+  if (!hasProperty(item.data, "flags.betterCurses.msak")) setProperty(item.data, "flags.betterCurses.msak", false);
+  if (!hasProperty(item.data, "flags.betterCurses.rsak")) setProperty(item.data, "flags.betterCurses.rsak", false);
 
   // Create the tab
   let tabSelector = html.find(`.tabs`),

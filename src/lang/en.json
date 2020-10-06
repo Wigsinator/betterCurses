@@ -4,8 +4,8 @@
     "betterCurses.curseName": "Name of the curse",
     "betterCurses.formula": "Damage formula of the curse",
     "betterCurses.affects": "This curse affects",
-    "betterCurses.mw": "Melee weapon attacks",
-    "betterCurses.rw": "Ranged weapon attacks",
-    "betterCurses.ms": "Melee spell attacks",
-    "betterCurses.rs": "Ranged spell attacks"
+    "betterCurses.mwak": "Melee weapon attacks",
+    "betterCurses.rwak": "Ranged weapon attacks",
+    "betterCurses.msak": "Melee spell attacks",
+    "betterCurses.rsak": "Ranged spell attacks"
 }
