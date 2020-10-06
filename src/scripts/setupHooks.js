@@ -3,13 +3,10 @@ import { applyEffects } from "./applyEffects.js"
 
 export function setupControlHook(){
   return Hooks.on("controlToken", (controlledToken, selected) => {
-    if (!selected) {
-      clearEffects(controlledToken.actor);
-    } else {
-      let targets = game.user.targets.ids;
-      if (targets.length == 1){
-        applyEffects(controlledToken.actor, canvas.tokens.get(targets[0]).actor)
-      }
+    clearEffects(controlledToken.actor);
+    let targets = game.user.targets.ids;
+    if (selected && targets.length == 1) {
+      applyEffects(controlledToken.actor, canvas.tokens.get(targets[0]).actor)
     }
   })
 }
