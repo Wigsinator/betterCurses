@@ -7,5 +7,7 @@
     "betterCurses.mwak": "Melee weapon attacks",
     "betterCurses.rwak": "Ranged weapon attacks",
     "betterCurses.msak": "Melee spell attacks",
-    "betterCurses.rsak": "Ranged spell attacks"
+    "betterCurses.rsak": "Ranged spell attacks",
+    "betterCurses.debug.name": "Debug mode",
+    "betterCurses.debug.hint": "Print debug output to console?"
 }

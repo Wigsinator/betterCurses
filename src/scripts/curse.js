@@ -1,3 +1,4 @@
+import { log } from "./helpers.js"
 import { setFlag } from "./setFlag.js"
 import { applyEffects } from "./applyEffects.js"
 
