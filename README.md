@@ -39,13 +39,21 @@ Install using the manifest URL: `https://raw.githubusercontent.com/Wigsinator/be
 
 ## Module Compatibility
 
+This module relies on the DnD5e system. Version 2.0 and greater requires Foundry 0.7.5 or higher, but will be fundamentally more compatible with other modules than version 1.0.
+
+### Version >2.0
+
+Version 2.0 and greater of this module relies on the Active Effects system of Foundry 0.7 and up. There is a chance that another module will use the same naming scheme for Active Effects as I did, and this would likely cause problems. If such a module pops up, or you have any other problems, please raise an issue in GitHub issues and/or ping me on The Foundry Discord @Wigsinator#2306. I can't guarantee I can fix the problem, but I can at least look into making it work.
+
+### Version <=1.0.1
+
 This module, in its functioning, hijacks use of the Item5e's rollDamage function. Any other module that also affects this function, or any module that bypasses the function entirely when rolling damage, is likely to cause problems with this module. If such a module pops up, please raise an issue in GitHub issues and/or ping me on The Foundry Discord @Wigsinator#2306. I can't guarantee I can fix the problem, but I can at least look into making it work.
 
 One such module is MESS. Mess bypasses the rollDamage function entirely when using modified rolling, opting instead for its own internal getDmgData function. Seeing as I have no access to this function from outside the module, fixing compatibility with MESS modified rolling is impossible. I'm very sorry.
 
 ## List of functionality to create
 
-- [ ] Overhaul logic in preparation for version 0.7.x of Foundry
+- [x] Overhaul logic in preparation for version 0.7.x of Foundry
 - [ ] Make it easier to know who is cursed, and by whom
 - [ ] Add a function to clear all curses affecting a target
 - [ ] Alter targeting rules so that curses can only target one user
