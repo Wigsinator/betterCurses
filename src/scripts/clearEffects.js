@@ -1,9 +1,15 @@
 import { log } from "./helpers.js"
 
-export function clearEffects(actor){
+export async function clearEffects(actor){
   var filtered = actor.effects.filter(x => x.data.label === "betterCurses");
+  var promiseList = [];
   for (var effect of filtered) {
-    log(`Clearing Effect`)
-    actor.deleteEmbeddedEntity("ActiveEffect", effect.id);
+    log(`Clearing Effect ${effect.id}`);
+    promiseList.push(actor.deleteEmbeddedEntity("ActiveEffect", effect.id));
+  }
+  if (promiseList) {
+    log("Promise List:")
+    log(promiseList);
+    await Promise.all(promiseList);
   }
 }

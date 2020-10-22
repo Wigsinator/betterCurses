@@ -1,6 +1,7 @@
 import { log } from "./helpers.js"
 import { setFlag } from "./setFlag.js"
 import { applyEffects } from "./applyEffects.js"
+import { clearEffects } from "./clearEffects.js"
 
 export async function curse(curse){
     let user = game.user;
@@ -10,6 +11,7 @@ export async function curse(curse){
         await setFlag(targetId, selectedId, curse)
     }
     if (user.targets.ids.length === 1){
-        applyEffects(canvas.tokens.get(selectedId).actor, canvas.tokens.get(targets[0]).actor)
+        await clearEffects(canvas.tokens.get(selectedId).actor);
+        applyEffects(canvas.tokens.get(selectedId).actor, canvas.tokens.get(user.targets.ids[0]).actor);
     }
 }
