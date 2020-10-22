@@ -1,6 +1,6 @@
 import { log } from "./helpers.js"
 
-export function setFlag(targetId, curserId, curse) {
+export async function setFlag(targetId, curserId, curse) {
   let target = canvas.tokens.get(targetId).actor;
   let curser = canvas.tokens.get(curserId).actor;
 
@@ -24,13 +24,13 @@ export function setFlag(targetId, curserId, curse) {
       let index = list.indexOf(curser.id);
       list.splice(index, 1);
     }
-    target.setFlag('betterCurses',curse,list);
+    await target.setFlag('betterCurses',curse,list);
   } else if (enabled) {
     log(`Already cursed by other curser, adding to list`); 
     list.push(curser.id);
-    target.setFlag('betterCurses',curse,list);
+    await target.setFlag('betterCurses',curse,list);
   } else {
     log(`Adding new curse`); 
-    target.setFlag('betterCurses',curse,[curser.id]);
+    await target.setFlag('betterCurses',curse,[curser.id]);
   }
 }
