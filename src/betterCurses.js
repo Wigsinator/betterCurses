@@ -3,6 +3,7 @@ import { log } from "./scripts/helpers.js"
 import { curse } from "./scripts/curse.js"
 import { initSheetTab } from "./scripts/betterCursesTab.js"
 import { setupControlHook, setupTargetHook } from "./scripts/setupHooks.js"
+import { clearCursesOnControlledActors } from "./scripts/clearCurses.js"
  
 function i18n(key) {
     return game.i18n.localize(key);
@@ -22,7 +23,8 @@ Hooks.once("init", function() {
 
 Hooks.once("setup", function() {
     window.BetterCurses = {
-        curse: curse
+        curse: curse,
+        clearCurses: clearCursesOnControlledActors
     };
     log("Setup Done");
 });
