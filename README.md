@@ -23,12 +23,6 @@ Hunter's Mark deals 1d6 damage when hit with a weapon attack, so:
 To apply a curse to a target, run the script `BetterCurses.curse([Curse Name as defined above])` while having the curser selected, and the target targeted.
 The module comes with a compendium pack with two macros, one simply setting a variable space for you to apply the curse.
 
-#### Dynamic Effects curse application
-
-The other macro is `dynamicEffectsCurse`, which can reduce the number of macros you need to keep saved. If you wish to use this method, set the active effect of the item to be `Macro Execute = "dynamicEffectsCurse" "[Curse Name as defined above]"`. Then simply activate the item to apply the curse.
-
-![Dynamic Effects setup](./img/dynamiceffectsMacroSetup.png)
-
 #### Removing the curse
 
 If you attempt to apply the curse to a target when they are already cursed by that actor, then it will remove the curse for that target from that curser.
@@ -55,6 +49,6 @@ One such module is MESS. Mess bypasses the rollDamage function entirely when usi
 
 - [x] Overhaul logic in preparation for version 0.7.x of Foundry
 - [ ] Make it easier to know who is cursed, and by whom
-- [ ] Add a function to clear all curses affecting a target
+- [x] Add a function to clear all curses affecting a target
 - [ ] Alter targeting rules so that curses can only target one user
 - [ ] Set other persistent effects, such as disadvantage on ability checks
