@@ -1,13 +1,9 @@
 var makeActive = false;
 
 export function initSheetTab() {
-  let itemSheets = {}
-  Object.values(CONFIG.Item.sheetClasses).forEach(itemType => Object.keys(itemType).forEach(sheetName => itemSheets[sheetName] = 1));
-  Object.keys(itemSheets).forEach(
-    sheetName => Hooks.on(`render${sheetName.split(".")[1]}`, (app, html, data) => {
-        addBetterCursesTab(app, html, data);
-    })
-  );
+  Hooks.on(`renderItemSheet5e`, (app, html, data) => {
+    addBetterCursesTab(app, html, data);
+  });
 }
 
 async function addBetterCursesTab(app,html,data) {
