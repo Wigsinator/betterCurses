@@ -9,28 +9,28 @@ export async function setFlag(targetId, curserId, curse) {
   log(`Curse is ${curse}`);
 
   let enabled = false;
-  let curserInList = false;
-  let list = target.getFlag('betterCurses',curse)
+  let targetInList = false;
+  let list = curser.getFlag('betterCurses',curse)
   if (list !== null && list !== undefined) {
     enabled = true;
-    curserInList = list.includes(curser.id);
+    targetInList = list.includes(target.id);
   }
 
-  if (curserInList) {
-    log(`Already cursed by curser, removing curse`); 
+  if (targetInList) {
+    log(`Already targetting target, removing curse`); 
     if (list.length == 1) {
       list = null;
     } else {
-      let index = list.indexOf(curser.id);
+      let index = list.indexOf(target.id);
       list.splice(index, 1);
     }
-    await target.setFlag('betterCurses',curse,list);
+    await curser.setFlag('betterCurses',curse,list);
   } else if (enabled) {
-    log(`Already cursed by other curser, adding to list`); 
-    list.push(curser.id);
-    await target.setFlag('betterCurses',curse,list);
+    log(`Already targetting other target, adding to list`); 
+    list.push(target.id);
+    await curser.setFlag('betterCurses',curse,list);
   } else {
     log(`Adding new curse`); 
-    await target.setFlag('betterCurses',curse,[curser.id]);
+    await curser.setFlag('betterCurses',curse,[target.id]);
   }
 }
