@@ -6,8 +6,8 @@ export function applyEffects(actor, target){
     log(`Scanning item ${item.data.name}`);
     if (item.getFlag("betterCurses", "isCurse")) {
       log(`Handling curse ${item.getFlag("betterCurses", "curseName")}`);
-      var list = target.getFlag('betterCurses', item.getFlag("betterCurses", "curseName"));
-      if (list && list.includes(actor.id)) {
+      var targets = actor.getFlag('betterCurses', item.getFlag("betterCurses", "curseName"));
+      if (targets && targets.includes(target.id)) {
         const effectData = {
           label: "betterCurses",
           changes: []
