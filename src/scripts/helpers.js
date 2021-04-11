@@ -4,3 +4,9 @@ export function log(data, force = false) {
     else console.log(data);
   }
 }
+
+export function GetAllFlags(entity, scope) {
+    const scopes = SetupConfiguration.getPackageScopes();
+    if (!scopes.includes(scope)) return;
+    return getProperty(entity.data.flags, scope);
+}
