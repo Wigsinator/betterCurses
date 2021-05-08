@@ -7,10 +7,10 @@ export async function curse(curse){
     let user = game.user;
     let selectedId = ChatMessage.getSpeaker().token;
 
-    for (let targetId of user.targets.ids){
-        await setFlag(targetId, selectedId, curse)
+    for (let target of user.targets){
+        await setFlag(target.id, selectedId, curse)
     }
-    if (user.targets.ids.length === 1){
+    if (user.targets.length === 1){
         await clearEffects(canvas.tokens.get(selectedId).actor);
         applyEffects(canvas.tokens.get(selectedId).actor, canvas.tokens.get(user.targets.ids[0]).actor);
     }
