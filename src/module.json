@@ -6,6 +6,7 @@
    "version": "2.2.1",
    "minimumCoreVersion": "0.7.3",
    "compatibleCoreVersion":"0.7.9",
+   "system": "dnd5e",
    "esmodules": [
     "betterCurses.js"
    ],
@@ -23,13 +24,6 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
-    }
-  ],
-  "dependencies": [
-    {
-      "name": "dnd5e",
-      "type": "system",
-      "manifest": "https://gitlab.com/foundrynet/dnd5e/raw/master/system.json"
     }
   ],
   "url":"https://github.com/Wigsinator/betterCurses",
