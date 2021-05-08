@@ -6,6 +6,7 @@
    "version": "2.2.1",
    "minimumCoreVersion": "0.7.3",
    "compatibleCoreVersion":"0.7.9",
+   "system": "dnd5e",
    "esmodules": [
     "betterCurses.js"
    ],
@@ -25,14 +26,9 @@
       "path": "lang/en.json"
     }
   ],
-  "dependencies": [
-    {
-      "name": "dnd5e",
-      "type": "system",
-      "manifest": "https://gitlab.com/foundrynet/dnd5e/raw/master/system.json"
-    }
-  ],
   "url":"https://github.com/Wigsinator/betterCurses",
   "manifest":"https://raw.githubusercontent.com/Wigsinator/betterCurses/master/src/module.json",
-  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v2.2.1/betterCurses-wigsinator.zip"
+  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v2.2.1/betterCurses-wigsinator.zip",
+  "bugs":"https://github.com/Wigsinator/betterCurses/issues",
+  "allowBugReporter": true
  }
