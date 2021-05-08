@@ -28,5 +28,7 @@
   ],
   "url":"https://github.com/Wigsinator/betterCurses",
   "manifest":"https://raw.githubusercontent.com/Wigsinator/betterCurses/master/src/module.json",
-  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v2.2.1/betterCurses-wigsinator.zip"
+  "download":"https://github.com/Wigsinator/betterCurses/releases/download/v2.2.1/betterCurses-wigsinator.zip",
+  "bugs":"https://github.com/Wigsinator/betterCurses/issues",
+  "allowBugReporter": true
  }
