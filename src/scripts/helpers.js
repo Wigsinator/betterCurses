@@ -6,7 +6,7 @@ export function log(data, force = false) {
 }
 
 export function GetAllFlags(entity, scope) {
-    const scopes = SetupConfiguration.getPackageScopes();
+    const scopes = game.getPackageScopes();
     if (!scopes.includes(scope)) return;
     return getProperty(entity.data.flags, scope);
 }
