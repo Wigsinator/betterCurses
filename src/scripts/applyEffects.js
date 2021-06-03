@@ -2,7 +2,7 @@ import { log } from "./helpers.js"
 
 export function applyEffects(actor, target){
   const types = ["mwak","rwak","msak","rsak"];
-  for (var item of actor.items.entries) {
+  for (var item of actor.items) {
     log(`Scanning item ${item.data.name}`);
     if (item.getFlag("betterCurses", "isCurse")) {
       log(`Handling curse ${item.getFlag("betterCurses", "curseName")}`);
@@ -14,12 +14,12 @@ export function applyEffects(actor, target){
         }
         for (var type of types) {
           if (item.getFlag("betterCurses", type)) {
-            effectData.changes.push({key: `data.bonuses.${type}.damage`, value: `+${item.getFlag("betterCurses","formula")}`, mode: ACTIVE_EFFECT_MODES.ADD});
+            effectData.changes.push({key: `data.bonuses.${type}.damage`, value: `+${item.getFlag("betterCurses","formula")}`, mode: CONST.ACTIVE_EFFECT_MODES.ADD});
           }
         }
         log(`Applying Effect`)
         log(effectData)
-        actor.createEmbeddedEntity("ActiveEffect", effectData);
+        actor.createEmbeddedDocuments("ActiveEffect", [effectData]);
       }
     }
   }
