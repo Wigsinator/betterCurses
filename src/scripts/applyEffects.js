@@ -15,7 +15,7 @@ export function applyEffects(actor, target){
 
         for (var type of types) {
           if (item.getFlag("betterCurses", type)) {
-            effectData.changes.push({key: `data.bonuses.${type}.damage`, value: `+${item.getFlag("betterCurses","formula")}`, mode: CONST.ACTIVE_EFFECT_MODES.ADD});
+            effectData.changes.push({key: `data.bonuses.${type}.damage`, value: `${item.getFlag("betterCurses","formula")}`, mode: CONST.ACTIVE_EFFECT_MODES.ADD});
           }
         }
         log(`Applying Effect`);
